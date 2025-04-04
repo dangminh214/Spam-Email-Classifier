@@ -15,12 +15,6 @@ This project utilizes the [Spam Emails Dataset](https://www.kaggle.com/datasets/
 - Pandas
 - HTML 
   
-### Install dependencies
-    Install all dependencies in requirements.txt
-    ```bash
-    pip install -r requirements.txt
-    ```
-
 ### Running Steps Locally
 1. **Clone the repository**  
    Clone the project repository to your local machine.
