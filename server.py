@@ -42,4 +42,12 @@ def predict_spam_or_ham(email: Email):
     
     # Return the result as a dictionary
     result = "spam" if prediction == 1 else "ham"
-    return {"email": email.text, "prediction": result}
+    return {"prediction": result}
+
+# Root endpoint
+@app.get("/")
+def get_info():
+    info = "Welcome to Dang Minh EMail Spam Classifier Model, this is a personal project to practice my knowledge in NLP and MLops"
+    return { 
+        "info": info
+    }

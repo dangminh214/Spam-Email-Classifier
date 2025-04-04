@@ -55,7 +55,7 @@ This project utilizes the [Spam Emails Dataset](https://www.kaggle.com/datasets/
 
 ### **POST** `/predict`
 
-Predicts the Iris flower species based on the given feature values.
+Predicts the E-Mail if it is a Spam E-Mail or not
 
 - **Request Body (JSON):**
   ```json
@@ -66,10 +66,21 @@ Predicts the Iris flower species based on the given feature values.
 - **Response:**
   ```json
   {
-    "email": "Hi I am Minh",
     "prediction": "ham"
   }
   ```
+
+### **GET** `/`
+
+Give the information of project to user
+
+- **Response:**
+  ```json
+  {
+    "info": "Welcome to Dang Minh EMail Spam Classifier Model, this is a personal project to practice my knowledge in NLP and MLops"
+  }
+  ```
+
 
 ## Contributing
 

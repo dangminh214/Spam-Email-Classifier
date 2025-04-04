@@ -26,6 +26,11 @@
             font-size: 18px;
             font-weight: bold;
         }
+        #info {
+            margin-top: 20px;
+            font-size: 16px;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
@@ -38,10 +43,16 @@
         <button type="submit">Classify Email</button>
     </form>
 
+    <button id="info-button">Info</button>
+
     <div id="result"></div>
+    <div id="info"></div>
 
     <script>
-        const PREDICT_URL = "http://127.0.0.1:8000/predict/"
+        const PREDICT_URL = "http://127.0.0.1:8000/predict/";
+        const INFO_URL = "http://127.0.0.1:8000/";
+
+        // Handle email form submission
         document.getElementById('email-form').addEventListener('submit', async function(event) {
             event.preventDefault();
 
@@ -56,8 +67,18 @@
             });
 
             const data = await response.json();
+            let predictResult = "Legit E-Mail"
 
-            document.getElementById('result').textContent = `Prediction: ${data.prediction}`;
+            if (data.prediction == "spam") predictResult = "Spam E-Mail"
+
+            document.getElementById('result').textContent = `Prediction: ${predictResult}`;
+        });
+
+        // Handle info button click
+        document.getElementById('info-button').addEventListener('click', async function() {
+            const response = await fetch(INFO_URL);
+            const data = await response.json();
+            document.getElementById('info').textContent = data.info;
         });
     </script>
 
