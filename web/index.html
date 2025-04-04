@@ -49,8 +49,13 @@
     <div id="info"></div>
 
     <script>
-        const PREDICT_URL = "http://127.0.0.1:8000/predict/";
-        const INFO_URL = "http://127.0.0.1:8000/";
+        // Local Server
+        // const PREDICT_URL = "http://127.0.0.1:8000/predict/";
+        // const INFO_URL = "http://127.0.0.1:8000/";
+
+        // Remote Servers
+        const PREDICT_URL = "https://spam-email-classifier-production.up.railway.app/predict/";
+        const INFO_URL = "https://spam-email-classifier-production.up.railway.app/";
 
         // Handle email form submission
         document.getElementById('email-form').addEventListener('submit', async function(event) {
