@@ -21,7 +21,7 @@ This project utilizes the [Spam Emails Dataset](https://www.kaggle.com/datasets/
     python export_model.py 
     ```
 
-### Running Steps using Docker 
+### Running Steps using Docker (Port 8888)
 1. **Clone the repository**  
    Clone the project repository to your local machine.
    ```bash
@@ -45,7 +45,7 @@ This project utilizes the [Spam Emails Dataset](https://www.kaggle.com/datasets/
    docker run -p 8888:8888 app
    ```
   
-### Running Steps Locally
+### Running Steps Locally (If run locally, default port will be 8000)
 1. **Clone the repository**  
    Clone the project repository to your local machine.
    ```bash
@@ -62,7 +62,7 @@ This project utilizes the [Spam Emails Dataset](https://www.kaggle.com/datasets/
 3. **Start the FastAPI server**  
    Run the FastAPI server to serve the model (default port 8000).
    ```bash
-   127.0.0.1:8888
+   127.0.0.1:8000
    ```
    ```bash
    uvicorn server:app --reload
@@ -70,8 +70,8 @@ This project utilizes the [Spam Emails Dataset](https://www.kaggle.com/datasets/
 
 4. **Access API Documentation**  
    Open the following API documentation in your browser:
-   - Swagger UI: [http://127.0.0.1:8000/docs](http://127.0.0.1:8888/docs)
-   - Redoc: [http://127.0.0.1:8000/redoc](http://127.0.0.1:8888/redoc)
+   - Swagger UI: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+   - Redoc: [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc)
    - Remote Sever using Railway: [https://spam-email-classifier-production.up.railway.app/docs](https://spam-email-classifier-production.up.railway.app/docs)
 
 5. **Run the client-side application**  
