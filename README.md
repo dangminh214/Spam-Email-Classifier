@@ -1,6 +1,6 @@
 # Spam Email Classifier  
 
-A simple Machine Learning project to classify spam email and normal email. This project is to understand basic concepts of NLP and deploy a model on a server using fastapi and interact with HTML UI
+A simple Machine Learning project to classify spam email and normal email. This project is to understand basic concepts of LLM and deploy a model on a server using fastapi and interact with HTML UI
 
 ## Dataset
 
