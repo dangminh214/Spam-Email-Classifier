@@ -107,6 +107,9 @@ Server URL
     https://spam-email-classifier-production.up.railway.app/ 
     ```
 
+## Expandability
+
+This project can be expanded beyond just the provided HTML file. It can be integrated with other web frameworks, such as ReactJS, to create an even more interactive and user-friendly interface. This will further enhance the usability and scalability of the application.
 
 ## Contributing
 
