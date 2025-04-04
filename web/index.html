@@ -41,12 +41,13 @@
     <div id="result"></div>
 
     <script>
+        const PREDICT_URL = "http://127.0.0.1:8000/predict/"
         document.getElementById('email-form').addEventListener('submit', async function(event) {
             event.preventDefault();
 
             const emailText = document.getElementById('email-text').value;
 
-            const response = await fetch('http://127.0.0.1:8000/predict/', {
+            const response = await fetch(PREDICT_URL, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
