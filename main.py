@@ -19,3 +19,6 @@ if __name__ == "__main__":
     # Classifier Classes: "ham" "spam"
     for email in emails:
         print(f"Email: \"{email}\" => Prediction: {clf.predict(email)}")
+
+    # Export model and vectorizer
+    clf.export('spam_classifier_model.pkl', 'tfidf_vectorizer.pkl')

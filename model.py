@@ -5,6 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, accuracy_score, confusion_matrix
 import matplotlib.pyplot as plt
 import seaborn as sns
+import pickle
 
 class SpamClassifier:
     def __init__(self):
@@ -43,3 +44,12 @@ class SpamClassifier:
         text_tfidf = self.vectorizer.transform([text])
         prediction = self.model.predict(text_tfidf)
         return 'spam' if prediction == 1 else 'ham'
+
+    def export(self, model_filename='spam_model.pkl', vectorizer_filename='vectorizer.pkl'): 
+        with open(model_filename, 'wb') as model_file:
+            pickle.dump(self.model, model_file)
+        
+        with open(vectorizer_filename, 'wb') as vectorizer_file:
+            pickle.dump(self.vectorizer, vectorizer_file)
+        
+        print(f"Model and vectorizer exported as {model_filename} and {vectorizer_filename}")
