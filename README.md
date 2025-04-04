@@ -15,6 +15,12 @@ This project utilizes the [Spam Emails Dataset](https://www.kaggle.com/datasets/
 - Pandas
 - HTML 
 
+## Export classification model 
+- To re-train or export new models run command: 
+    ```bash
+    python export_model.py 
+    ```
+
 ### Running Steps using Docker 
 1. **Clone the repository**  
    Clone the project repository to your local machine.
