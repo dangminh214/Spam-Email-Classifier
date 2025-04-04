@@ -118,7 +118,8 @@ Server URL
 This project can be expanded beyond just the provided HTML file. It can be integrated with other web frameworks, such as ReactJS, to create an even more interactive and user-friendly interface. This will further enhance the usability and scalability of the application.
 
 ## Demo Usage
-![Demo Usage Png](doc/image.png)
+![Demo Usage Png](doc/spam-image.png)
+![Legit Image Png](doc/leegit-image.png)
 
 ## Contributing
 
