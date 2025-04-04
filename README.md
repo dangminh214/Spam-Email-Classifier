@@ -14,6 +14,30 @@ This project utilizes the [Spam Emails Dataset](https://www.kaggle.com/datasets/
 - Scikit-learn  
 - Pandas
 - HTML 
+
+### Running Steps using Docker 
+1. **Clone the repository**  
+   Clone the project repository to your local machine.
+   ```bash
+   git clone <repository-url>
+   cd <repository-folder>
+   ```
+
+2. **Install dependencies**  
+   Install the required Python dependencies.
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Build Docker Image**
+   ```bash
+   docker build -t app .
+   ```
+
+4. **Run Docker Image**
+   ```bash 
+   docker run -p 8888:8888 app
+   ```
   
 ### Running Steps Locally
 1. **Clone the repository**  
@@ -32,7 +56,7 @@ This project utilizes the [Spam Emails Dataset](https://www.kaggle.com/datasets/
 3. **Start the FastAPI server**  
    Run the FastAPI server to serve the model (default port 8000).
    ```bash
-   127.0.0.1:8000
+   127.0.0.1:8888
    ```
    ```bash
    uvicorn server:app --reload
@@ -42,6 +66,7 @@ This project utilizes the [Spam Emails Dataset](https://www.kaggle.com/datasets/
    Open the following API documentation in your browser:
    - Swagger UI: [http://127.0.0.1:8000/docs](http://127.0.0.1:8888/docs)
    - Redoc: [http://127.0.0.1:8000/redoc](http://127.0.0.1:8888/redoc)
+   - Remote Sever using Railway: [https://spam-email-classifier-production.up.railway.app/docs](https://spam-email-classifier-production.up.railway.app/docs)
 
 5. **Run the client-side application**  
    Open web/index.html in web browser
@@ -75,6 +100,12 @@ Give the information of project to user
     "info": "Welcome to Dang Minh EMail Spam Classifier Model, this is a personal project to practice my knowledge in NLP and MLops"
   }
   ```
+
+### Deploy remotely on Railway 
+Server URL 
+    ```bash
+    https://spam-email-classifier-production.up.railway.app/ 
+    ```
 
 
 ## Contributing
