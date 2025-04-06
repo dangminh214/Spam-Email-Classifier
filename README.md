@@ -67,11 +67,16 @@ This project utilizes the [Spam Emails Dataset](https://www.kaggle.com/datasets/
    ```bash
    uvicorn server:app --reload
    ```
+   or 
+   ```bash
+   python -m uvicorn server:app --reload 
+   ```
 
 4. **Access API Documentation**  
    Open the following API documentation in your browser:
-   - Swagger UI: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
-   - Redoc: [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc)
+   - Local Server: 
+      - Swagger UI: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+      - Redoc: [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc)
    - Remote Sever using Railway: [https://spam-email-classifier-production.up.railway.app/docs](https://spam-email-classifier-production.up.railway.app/docs)
 
 5. **Run the client-side application**  
