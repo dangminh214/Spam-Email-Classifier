@@ -131,5 +131,5 @@ This project can be expanded beyond just the provided HTML file. It can be integ
 Contributions are welcome! If you find any issues or want to suggest improvements, feel free to open an issue or submit a pull request.
 
 ## License
-
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 This project is licensed under the MIT License.
